@@ -12,8 +12,11 @@ app.get("/", function (req, res) {
   res.sendFile(process.cwd() + "/views/index.html");
 });
 
-const upload = multer({ dest: "uploads/", limits: { fileSize: 5000000 } });
+const upload = multer({ limits: { fileSize: 5000000 } });
 
+// Analyze the uploaded file
+// The file is kept in memory and limited to 5MB.
+// It could be saved in disk and then deleted.
 app.post("/api/fileanalyse", upload.single("upfile"), (req, res) => {
   res.status(200).json({
     name: req.file.originalname,
