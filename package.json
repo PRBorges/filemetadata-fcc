@@ -1,0 +1,39 @@
+{
+  "name": "filemetadata-fcc",
+  "version": "1.0.0",
+  "description": "An API project for the Backend FCC certification",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prborges/filemetadata-fcc.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "API"
+  ],
+  "author": "Pedro R. Borges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prborges/filemetadata-fcc/issues"
+  },
+  "homepage": "https://github.com/prborges/filemetadata-fcc#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
