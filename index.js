@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
   res.sendFile(process.cwd() + "/views/index.html");
 });
 
-const upload = multer({ dest: "uploads/" });
+const upload = multer({ dest: "uploads/", limits: { fileSize: 5000000 } });
 
 app.post("/api/fileanalyse", upload.single("upfile"), (req, res) => {
   res.status(200).json({
